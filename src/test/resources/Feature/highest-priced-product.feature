@@ -1,4 +1,4 @@
-@unittest
+@highest-price
 Feature: Add Highest Priced Product to Cart
   As a user
   I want to add the highest priced product to my cart
@@ -9,7 +9,6 @@ Feature: Add Highest Priced Product to Cart
     When I login with username "standard_user" and password "secret_sauce"
     Then I should see the Products page
 
-  @unittest @highest-price
   Scenario: Add highest priced product to cart and verify product name and price
     When I find the product with highest price
     And I add the highest priced product to cart

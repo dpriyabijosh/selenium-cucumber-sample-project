@@ -1,4 +1,4 @@
-@login @regression
+@login
 Feature: User Login Authentication
   As a user of the SauceDemo application
   I want to login with different user types
@@ -7,7 +7,6 @@ Feature: User Login Authentication
   Background:
     Given I am on the SauceDemo login page
 
-  @smoke @positive
   Scenario Outline: Successful login with valid users
     When I login with username "<username>" and password "<password>"
     Then I should be successfully logged in
